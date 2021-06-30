@@ -1,6 +1,6 @@
 Imports Ozeki.Libs.Rest
 
-Module ReceiveSMS
+Module Program
     Sub Main(args As String())
 
         Dim configuration As New Configuration

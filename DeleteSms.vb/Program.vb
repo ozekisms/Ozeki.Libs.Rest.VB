@@ -1,6 +1,6 @@
 Imports Ozeki.Libs.Rest
 
-Module DeleteSms
+Module Program
     Sub Main(args As String())
 
         Dim configuration As New Configuration
