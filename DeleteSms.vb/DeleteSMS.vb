@@ -1,6 +1,6 @@
 Imports Ozeki.Libs.Rest
 
-Module ReceiveSMS
+Module DeleteSms
     Sub Main(args As String())
 
         Dim configuration As New Configuration
@@ -9,7 +9,7 @@ Module ReceiveSMS
         configuration.ApiUrl = "http://127.0.0.1:9509/api"
 
         Dim msg As New Message
-        msg.ID = "69022e7a-305c-4f01-8063-7f9d65f5ca49"
+        msg.ID = "15548136-558c-465c-81fe-7006315c2f6a"
 
         Dim api As New MessageApi(configuration)
 

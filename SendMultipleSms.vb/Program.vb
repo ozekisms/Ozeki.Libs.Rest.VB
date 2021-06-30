@@ -20,11 +20,9 @@ Module Program
         msg3.ToAddress = "+36203333333"
         msg3.Text = "Hello, World 3"
 
-        Dim messages As New List(Of Message) From {msg1, msg2, msg3}
-
         Dim api = New MessageApi(configuration)
 
-        Dim result = api.Send(messages)
+        Dim result = api.Send({ msg1, msg2, msg3 })
 
         Console.WriteLine(result)
         Console.ReadKey()

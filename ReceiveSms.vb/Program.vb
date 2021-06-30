@@ -12,14 +12,10 @@ Module ReceiveSMS
 
         Dim result = api.DownloadIncoming()
 
-        If result.Length > 0 Then
-            Console.WriteLine($"There are {result.Length} in the inbox folder:")
-            For Each message As Message In result
-                Console.WriteLine($"From: {message.FromAddress} Text: {message.Text}")
-            Next
-        Else
-            Console.WriteLine("There are 0 messages in the inbox folder.")
-        End If
+        Console.WriteLine($"There are {result.Length} in the inbox folder:")
+        For Each message As Message In result
+            Console.WriteLine($"{message}")
+        Next
 
         Console.ReadKey()
 
